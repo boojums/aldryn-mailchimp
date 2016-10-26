@@ -19,6 +19,17 @@ To activate MailChimp integration:
 When all above is done, you can add MailChimp integration plugins to
 placeholders.
 
+Manual Installation
+-------------------
+
+::
+
+    pip install aldryn-mailchimp
+
+Add ``aldryn_mailchimp`` and ``adminsortable`` to ``INSTALLED_APPS`` and run ``manage.py migrate aldryn_mailchimp``.
+
+Add ``MAILCHIMP_API_KEY`` to your ``settings.py`` using the provided key from Mailchimp.
+
 ===============================
 Categories + Automatic Matching
 ===============================
