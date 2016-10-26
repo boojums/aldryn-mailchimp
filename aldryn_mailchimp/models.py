@@ -19,7 +19,7 @@ class SubscriptionPlugin(CMSPlugin):
             'Save the user\'s language based on the page language'))
 
     def __str__(self):
-        return unicode(self.list_id)
+        return self.list_id
 
 
 class CampaignManager(models.Manager):
@@ -40,7 +40,7 @@ class Category(Sortable):
         verbose_name_plural = _('Categories')
 
     def __str__(self):
-        return unicode(self.name)
+        return self.name
 
 
 @python_2_unicode_compatible
